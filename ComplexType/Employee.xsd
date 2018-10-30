@@ -4,6 +4,7 @@
   <xsd:annotation>
     <xsd:documentation>This is complete XSD.</xsd:documentation>
   </xsd:annotation>
+  <xsd:include schemaLocation="ElementAny.xsd"/>
   <xsd:element name="Employee">
     <xsd:complexType>
       <xsd:sequence>
@@ -63,4 +64,11 @@
       </xsd:element>
     </xsd:all>
   </xsd:group>
+  <xsd:element name="Comments">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="ElementAny"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
 </xsd:schema>
