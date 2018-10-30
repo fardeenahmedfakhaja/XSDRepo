@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+  <xsd:annotation>
+    <xsd:documentation>This is complete XSD.</xsd:documentation>
+  </xsd:annotation>
+  <xsd:element name="Employee">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="EmployeeName" type="EmployeeNameType"/>
+        <xsd:element name="ID" type="idType"/>
+        <xsd:element name="Transport">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:enumeration value="Two Wheeler"/>
+              <xsd:enumeration value="Four Wheeler"/>
+              <xsd:enumeration value="Bus"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element name="PersonalDetails">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:group ref="PersonalDetailsGroup"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:simpleType name="idType">
+    <xsd:restriction>
+      <xsd:length value="10"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="EmployeeNameType">
+    <xsd:sequence>
+      <xsd:element name="Firstname">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="32"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="LastName">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="32"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:group name="PersonalDetailsGroup">
+    <xsd:all>
+      <xsd:element name="FatherName" type="xsd:string"/>
+      <xsd:element name="MotherName" type="xsd:string"/>
+      <xsd:element name="DOB" type="xsd:string"/>
+      <xsd:element name="Hobby">
+        <xsd:simpleType>
+          <xsd:list itemType="xsd:string"/>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:all>
+  </xsd:group>
+</xsd:schema>

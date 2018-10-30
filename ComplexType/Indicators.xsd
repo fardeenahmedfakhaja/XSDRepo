@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+  <xsd:element name="EmployeeSequence">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Name" type="xsd:string"/>
+        <xsd:element name="ID" type="xsd:int"/>
+        <xsd:element name="Salary" type="xsd:float"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EmployeeAll">
+    <xsd:complexType>
+      <xsd:all>
+        <xsd:element name="Name" type="xsd:string"/>
+        <xsd:element name="ID" type="xsd:int"/>
+        <xsd:element name="Salary" type="xsd:float"/>
+      </xsd:all>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EmployeeChoice">
+    <xsd:complexType>
+      <xsd:choice>
+        <xsd:element name="Name" type="xsd:string"/>
+        <xsd:element name="ID" type="xsd:int"/>
+        <xsd:element name="Salary" type="xsd:float"/>
+      </xsd:choice>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
