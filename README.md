@@ -9,14 +9,14 @@ This Repo has Folders:
 2. ComplexType
    
    
-## SimpleType Folder: 
+## SimpleType Folder:   
 1. **SimpleElement.xsd:**   
                It consists of a basic representation of a simple element in xsd.    
 2. **Employee.xsd:**  
                 It consists of complete usage of simple type element along with various restriction like enumeration, minInclution,  length etc.  
            
            
-## ComplexType Folder:
+## ComplexType Folder:  
 1. **ComplexElement.xsd:**   
                It consists of a basic representation of a Complex element in xsd which consists of combinations of simple elements, sttributes  and other complex elements.  
 2. **ComplexTypeComponent.xsd:**  
