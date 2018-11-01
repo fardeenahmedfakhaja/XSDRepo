@@ -1,6 +1,8 @@
 # XSDRepo
 This Repo  have code related to creation of XSD along with various components that can be used in it.
-#XSD
+
+
+##XSD
 XSD stands for XML Schema Definition. It is used to properly define an XML. XSD is used to validate over data, datatype, conditions etc over an XML element. It basically helps to create well-formed and valid  XMLs.
 This Repo has Folders:
         1)SimpleType
