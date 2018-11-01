@@ -11,8 +11,7 @@ This Repo has Folders:
    
  **SimpleType Folder:**
         a)SimpleElement.xsd: 
-               It consists of a basic representation of a simple element in xsd.
-               
+               It consists of a basic representation of a simple element in xsd.  
         b)Employee.xsd:
                 It consists of complete usage of simple type element along with various restriction like enumeration, minInclution,  length etc.
            
